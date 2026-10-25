@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Baixar LEVEL UP</title>
+  <meta name="description" content="Instale o LEVEL UP no Android ou no iPhone." />
+  <meta name="theme-color" content="#020202" />
+  <meta property="og:title" content="LEVEL UP — Pare de rolar o feed." />
+  <meta property="og:description" content="Missões diárias, XP, ofensiva e ranking com os amigos. Instale no Android ou no iPhone." />
+  <meta property="og:image" content="icon-512.png" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #020202; --card: #0a0c0e; --card2: #101214; --border: #191b1d;
+      --text: #f8f8f8; --muted: #8a8a8a; --primary: #36f555; --on-primary: #020202;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--text); }
+    body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    main { max-width: 480px; margin: 0 auto; padding: 24px 16px 48px; }
+    .brand { display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 800; letter-spacing: .5px; }
+    .brand img { width: 34px; height: 34px; border-radius: 9px; }
+    h1 { font-size: clamp(2.2rem, 10vw, 2.75rem); line-height: 1.02; letter-spacing: -0.04em; margin: 40px 0 0; text-align: center; font-weight: 800; }
+    .sub { color: var(--primary); text-align: center; font-weight: 700; font-size: clamp(1.1rem, 5.5vw, 1.5rem); margin: 10px 0 0; letter-spacing: -0.02em; }
+    .lead { color: var(--muted); text-align: center; font-size: 15px; margin: 18px 0 0; }
+    .lead b { color: var(--primary); font-weight: 600; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px; margin-top: 16px; }
+    .card.highlight { border-color: rgba(54,245,85,.45); background: #06140a; }
+    .over { font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--primary); margin: 0; }
+    .card h2 { margin: 6px 0 0; font-size: 22px; letter-spacing: -0.02em; }
+    .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 56px; margin-top: 16px;
+           border-radius: 12px; background: var(--primary); color: var(--on-primary); font-weight: 700; font-size: 17px;
+           text-decoration: none; box-shadow: 0 10px 30px rgba(54,245,85,.3); }
+    .btn.secondary { background: var(--card2); color: var(--text); border: 1px solid var(--border); box-shadow: none; }
+    .btn:active { transform: scale(.98); }
+    ol { margin: 16px 0 0; padding-left: 20px; color: var(--muted); font-size: 14px; }
+    ol li { margin-top: 6px; }
+    ol b { color: var(--text); font-weight: 600; }
+    .note { color: var(--muted); font-size: 13px; text-align: center; margin-top: 28px; }
+    svg { flex: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand"><img src="icon-192.png" alt="" />LEVEL UP</div>
+    <h1>Pare de rolar o feed.</h1>
+    <p class="sub">Comece a subir de nível.</p>
+    <p class="lead">Missões diárias, <b>XP</b>, <b>ofensiva</b>, <b>avatar que evolui</b> e <b>ranking</b> com os amigos. A recompensa vem depois do esforço.</p>
+
+    <section class="card" id="android">
+      <p class="over">Android</p>
+      <h2>Instalar o app</h2>
+      <a class="btn" href="https://github.com/Efraimelm/levelup-app/releases/latest/download/LevelUp.apk">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6M5 21h14"/></svg>
+        Baixar APK
+      </a>
+      <ol>
+        <li>Toque em <b>Baixar APK</b> e abra o arquivo baixado.</li>
+        <li>Se aparecer o aviso, permita <b>instalar apps desta fonte</b>.</li>
+        <li>Toque em <b>Instalar</b> e abra o LEVEL UP.</li>
+      </ol>
+    </section>
+
+    <section class="card" id="iphone">
+      <p class="over">iPhone</p>
+      <h2>Usar pelo Safari</h2>
+      <a class="btn secondary" href="./">Abrir o LEVEL UP</a>
+      <ol>
+        <li>Abra este link no <b>Safari</b>.</li>
+        <li>Toque em <b>Compartilhar</b> (o quadrado com a seta).</li>
+        <li>Escolha <b>Adicionar à Tela de Início</b>. Pronto: o app abre em tela cheia, com ícone.</li>
+      </ol>
+    </section>
+
+    <p class="note">Depois de criar a conta, confirme o e-mail que chega na sua caixa de entrada.</p>
+  </main>
+  <script>
+    // destaca a opção do aparelho de quem abriu o link
+    var ua = navigator.userAgent || '';
+    var id = /iPhone|iPad|iPod/.test(ua) ? 'iphone' : /Android/.test(ua) ? 'android' : null;
+    if (id) {
+      var el = document.getElementById(id);
+      el.classList.add('highlight');
+      el.parentNode.insertBefore(el, document.getElementById('android'));
+      if (id === 'iphone') el.querySelector('.btn').classList.remove('secondary');
+    }
+  </script>
+</body>
+</html>
